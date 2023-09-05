@@ -1,0 +1,140 @@
+// Mixins acá
+
+.miBtn (@bgColor,@fontColor) {
+  background-color: @btn-bg-color; // Color de fondo del botón
+  height: 40px; // Altura del botón
+  width: 90px; // Ancho del botón
+  border-radius: 10px; // Radio de borde del botón
+  color: white; // Color del texto del botón
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px; // Tamaño de fuente del botón
+  cursor: pointer;
+  &:hover {
+    background-color: @fontColor; // Color de fondo al pasar el cursor sobre el botón
+    transition: background-color 1s ease; // Transición de color de fondo
+    color: @bgColor; // Color del texto al pasar el cursor sobre el botón
+    border: @bgColor solid 1px; // Borde del botón al pasar el cursor sobre él
+  }
+  @media (max-width: @phone) {
+    width: 100%; // Ancho del botón al estar en una pantalla de tamaño máximo @phone
+  }
+}
+.minavPrim {
+  width: 100%; // Ancho del elemento
+  background: @nav-bg; // Color de fondo del elemento
+  height: 90px; // Altura del elemento
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px; // Espacio entre elementos secundarios
+  position: fixed; // Posición fija
+  top: 0;
+  left: 0;
+  z-index: 1;
+  .minavsec() {
+    display: flex;
+    gap: 10px; // Espacio entre elementos secundarios
+    span {
+      font-size: 20px; // Tamaño de fuente del elemento secundario
+      font-weight: bold; // Peso de fuente del elemento secundario
+    }
+  }
+  @media (max-width: @phone) {
+    width: 100%; // Ancho del elemento al estar en una pantalla de tamaño máximo @phone
+  }
+}
+.mihome {
+  .intro {
+    padding: 10 px, 20px, 10px, 20px; // Relleno del elemento
+    h2 {
+      padding: 15px; // Relleno del elemento secundario
+    }
+    p {
+      padding: 0 15px; // Relleno del elemento secundario
+    }
+    .header-image {
+      margin-top: 110px; // Margen superior del elemento secundario
+      border-radius: 20px; // Radio de borde del elemento secundario
+      width: 100%; // Ancho del elemento secundario
+      @media (max-width: @phone) {
+        margin-left: 10px; // Margen izquierdo del elemento secundario al estar en una pantalla de tamaño máximo @phone
+        margin-right: 10px; // Margen derecho del elemento secundario al estar en una pantalla de tamaño máximo @phone
+      }
+    }
+  }
+  .music-images {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%; // Ancho del elemento
+    img {
+      width: 28%; // Ancho de las imágenes
+      margin: 20px 2.5%; // Margen de las imágenes
+      border-radius: 20px; // Radio de borde de las imágenes
+      height: 100%; // Altura de las imágenes
+    }
+    @media (max-width: @phone) {
+      .tecnologia,
+      .ondas {
+        display: none; // Ocultar elementos con las clases .tecnologia y .ondas en pantallas de tamaño máximo @phone
+      }
+      .auricular {
+        width: 100%; // Ancho del elemento con la clase .auricular al estar en una pantalla de tamaño máximo @phone
+      }
+    }
+  }
+}
+.musica-nueva {
+  padding: 15px; // Relleno del elemento
+  h3 {
+    margin-top: 11px; // Margen superior del elemento secundario
+  }
+  p {
+    margin-top: 13px; // Margen superior del elemento secundario
+  }
+}
+
+.actual {
+  margin-top: 60px; // Margen superior del elemento
+  border-top: 1px solid @main-border-color; // Borde superior del elemento
+  padding: 50px 60px; // Relleno del elemento
+  display: flex;
+  justify-content: center;
+  @media (max-width: @phone) {
+    flex-direction: column-reverse; // Dirección de flexión del elemento al estar en una pantalla de tamaño máximo @phone
+  }
+  .actual-text {
+    width: 50%; // Ancho del elemento secundario
+    @media (max-width: @phone) {
+      width: 100%; // Ancho del elemento secundario al estar en una pantalla de tamaño máximo @phone
+      justify-content: center;
+      margin-top: 20px; // Margen superior del elemento secundario al estar en una pantalla de tamaño máximo @phone
+      padding: 10px, 20px; // Relleno del elemento secundario al estar en una pantalla de tamaño máximo @phone
+      flex-direction: column-reverse; // Dirección de flexión del elemento secundario al estar en una pantalla de tamaño máximo @phone
+    }
+    h3 {
+      margin-bottom: 10px; // Margen inferior del elemento secundario
+    }
+    p {
+      margin-bottom: 26px; // Margen inferior del elemento secundario
+    }
+  }
+  .btn {
+    .miBtn(@btn-bg-color, @wild-sand); // Llamada al mixin .miBtn con los colores de fondo y de fuente proporcionados
+  }
+  .actual-img {
+    width: 46%; // Ancho del elemento secundario
+    margin-left: 4%; // Margen izquierdo del elemento secundario
+    @media (max-width: @phone) {
+      width: 100%; // Ancho del elemento secundario al estar en una pantalla de tamaño máximo @phone
+      flex-direction: column-reverse; // Dirección de flexión del elemento secundario al estar en una pantalla de tamaño máximo @phone
+    }
+    img {
+      width: 100%; // Ancho de la imagen
+      height: auto; // Altura de la imagen ajustada automáticamente
+      border-radius: 10px; // Radio de borde de la imagen
+    }
+  }
+}

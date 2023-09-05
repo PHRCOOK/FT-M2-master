@@ -1,0 +1,8 @@
+
+
+- Framework: Un framework es como un conjunto de herramientas que los programadores utilizan para construir cosas en la computadora. Imagina que quieres construir una casa, pero en lugar de empezar desde cero, tienes un conjunto de planos y herramientas que te ayudan a construir más rápido y de manera más organizada. Un framework es como esos planos y herramientas, te ayuda a construir aplicaciones o páginas web de manera más fácil y eficiente.
+
+- Preprocesador: Un preprocesador es como un ayudante para los programadores que les permite escribir código de manera más fácil y organizada. Imagina que quieres hacer una lista de cosas, pero en lugar de escribir cada cosa una por una, puedes escribir una sola vez las instrucciones para hacer la lista y el preprocesador se encarga de generar la lista completa por ti. Un preprocesador es como ese ayudante que toma tus instrucciones y las convierte en código que la computadora puede entender.
+
+- Página web adaptable: Una página web adaptable, también conocida como responsive website, es una página que se ajusta automáticamente para verse bien en diferentes dispositivos, como computadoras, tabletas o teléfonos móviles. Imagina que tienes una camiseta que puede cambiar de tamaño y forma para adaptarse a diferentes personas. Una página web adaptable funciona de manera similar, se adapta a la pantalla del dispositivo en el que se está viendo para que se vea bien y sea fácil de usar, sin importar el tamaño de la pantalla.
+

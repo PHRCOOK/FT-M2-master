@@ -1,0 +1,509 @@
+.minavPrim {
+  width: 100%;
+  background: #f6f6f6;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+@media (max-width: 500px) {
+  .minavPrim {
+    width: 100%;
+  }
+}
+.mihome .intro {
+  padding: 10 px, 20px, 10px, 20px;
+}
+.mihome .intro h2 {
+  padding: 15px;
+}
+.mihome .intro p {
+  padding: 0 15px;
+}
+.mihome .intro .header-image {
+  margin-top: 110px;
+  border-radius: 20px;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .mihome .intro .header-image {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+.mihome .music-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.mihome .music-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+@media (max-width: 500px) {
+  .mihome .music-images .tecnologia,
+  .mihome .music-images .ondas {
+    display: none;
+  }
+  .mihome .music-images .auricular {
+    width: 100%;
+  }
+}
+.musica-nueva {
+  padding: 15px;
+}
+.musica-nueva h3 {
+  margin-top: 11px;
+}
+.musica-nueva p {
+  margin-top: 13px;
+}
+.actual {
+  margin-top: 60px;
+  border-top: 1px solid #dee2e6;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 500px) {
+  .actual {
+    flex-direction: column-reverse;
+  }
+}
+.actual .actual-text {
+  width: 50%;
+}
+@media (max-width: 500px) {
+  .actual .actual-text {
+    width: 100%;
+    justify-content: center;
+    margin-top: 20px;
+    padding: 10px, 20px;
+    flex-direction: column-reverse;
+  }
+}
+.actual .actual-text h3 {
+  margin-bottom: 10px;
+}
+.actual .actual-text p {
+  margin-bottom: 26px;
+}
+.actual .btn {
+  /*background-color: @btn-bg-color;
+    height: 40px;
+    width: 90px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;*/
+  background-color: #22283a;
+  height: 40px;
+  width: 90px;
+  border-radius: 10px;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 14px;
+  cursor: pointer;
+}
+.actual .btn:hover {
+  background-color: #f6f6f6;
+  transition: background-color 1s ease;
+  color: #22283a;
+  border: #22283a solid 1px;
+}
+@media (max-width: 500px) {
+  .actual .btn {
+    width: 100%;
+  }
+}
+.actual .actual-img {
+  width: 46%;
+  margin-left: 4%;
+}
+@media (max-width: 500px) {
+  .actual .actual-img {
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+}
+.actual .actual-img img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html,
+body {
+  font-family: 'Ubuntu', sans-serif;
+  color: #5e6164;
+}
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: 'Russo One', sans-serif;
+  color: #23293b;
+}
+h2 {
+  font-size: 3.2rem;
+}
+h3 {
+  font-size: 2.8rem;
+}
+p {
+  font-size: 1.6rem;
+  line-height: 1.4;
+}
+.container {
+  max-width: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+.navPrin {
+  /* width: 100%;
+  background: @nav-bg;
+  height: 90px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  .navSecond {
+    display: flex;
+    gap: 30px;
+    span {
+      font-size: 20px;
+      font-weight: bold;
+    }*/
+  width: 100%;
+  background: #f6f6f6;
+  height: 90px;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  display: flex;
+  gap: 10px;
+}
+@media (max-width: 500px) {
+  .navPrin {
+    width: 100%;
+  }
+}
+.navPrin span {
+  font-size: 20px;
+  font-weight: bold;
+}
+@media (max-width: 500px) {
+  .navPrin {
+    width: 100%;
+  }
+}
+footer {
+  color: #22283B;
+  background: #f4f4f4;
+  padding: 20px 0;
+  border: 1px double #e0e0e0;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.home {
+  /* .intro {
+    padding: 10 px, 20px, 10px, 20px;
+    h2 {
+      padding: 15px;
+    }
+
+    p {
+      padding: 0 15px;
+    }
+    .header-image {
+      border-radius: 20px;
+      width: 100%;
+    }
+  }
+
+  .music-images {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+
+    img {
+      width: 28%;
+      margin: 20px 2.5%;
+      border-radius: 20px;
+      height: 100%;
+    }
+    @media (max-width: @phone) {
+      .tecnologia,
+      .ondas {
+        display: none;
+      }
+      .auricular {
+        width: 100%;
+      }
+    }
+  }
+}
+
+.musica-nueva {
+  padding: 15px;
+
+  h3 {
+    margin-top: 11px;
+  }
+
+  p {
+    margin-top: 13px;
+  }
+}
+
+.actual {
+  margin-top: 60px;
+  border-top: 1px solid @main-border-color;
+  padding: 50px 60px;
+  display: flex;
+  justify-content: center;
+
+  @media (max-width: @phone) {
+    flex-direction: column-reverse;
+  }
+
+  .actual-text {
+    width: 50%;
+    @media (max-width: @phone) {
+      width: 100%;
+      justify-content: center;
+      margin-top: 20px;
+      padding: 10px, 20px;
+      flex-direction: column-reverse;
+    }
+    h3 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 26px;
+    }
+  }
+  .btn {
+    /*background-color: @btn-bg-color;
+    height: 40px;
+    width: 90px;
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14px;
+    .miBtn(@btn-bg-color, @wild-sand);
+  }
+
+  .actual-img {
+    width: 46%;
+    margin-left: 4%;
+
+    @media (max-width: @phone) {
+      width: 100%;
+      flex-direction: column-reverse;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+  }*/
+}
+.home .intro {
+  padding: 10 px, 20px, 10px, 20px;
+}
+.home .intro h2 {
+  padding: 15px;
+}
+.home .intro p {
+  padding: 0 15px;
+}
+.home .intro .header-image {
+  margin-top: 110px;
+  border-radius: 20px;
+  width: 100%;
+}
+@media (max-width: 500px) {
+  .home .intro .header-image {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
+.home .music-images {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.home .music-images img {
+  width: 28%;
+  margin: 20px 2.5%;
+  border-radius: 20px;
+  height: 100%;
+}
+@media (max-width: 500px) {
+  .home .music-images .tecnologia,
+  .home .music-images .ondas {
+    display: none;
+  }
+  .home .music-images .auricular {
+    width: 100%;
+  }
+}

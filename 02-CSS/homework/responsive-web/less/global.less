@@ -1,0 +1,70 @@
+/* Estilos generales */
+
+* {
+  box-sizing: border-box;
+  /* Se establece el modelo de caja como border-box para incluir los bordes y el relleno en el ancho y alto total del elemento */
+}
+
+/* Estilos para el HTML */
+
+html {
+  font-size: 62.5%;
+  /* Se establece el tamaño de fuente base del HTML en 62.5% (equivale a 10px) */
+}
+
+/* Estilos para el HTML y el body */
+
+html,
+body {
+  font-family: "Ubuntu", sans-serif;
+  /* Se establece la fuente 'Ubuntu' como la fuente para el HTML y el body */
+  color: @main-font-color;
+  /* Se establece el color del texto principal utilizando una variable llamada @main-font-color */
+}
+
+/* Estilos para los encabezados (h1, h2, h3, h4, h5) */
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-family: "Russo One", sans-serif;
+  /* Se establece la fuente 'Russo One' como la fuente para los encabezados */
+  color: @header-font-color;
+  /* Se establece el color del texto del encabezado utilizando una variable llamada @header-font-color */
+}
+
+/* Estilos para el h2 */
+
+h2 {
+  font-size: 3.2rem;
+  /* Se establece el tamaño de fuente del h2 en 3.2rem (equivalente a 32px) */
+}
+
+/* Estilos para el h3 */
+
+h3 {
+  font-size: 2.8rem;
+  /* Se establece el tamaño de fuente del h3 en 2.8rem (equivalente a 28px) */
+}
+
+/* Estilos para los párrafos (p) */
+
+p {
+  font-size: 1.6rem;
+  /* Se establece el tamaño de fuente de los párrafos en 1.6rem (equivalente a 16px) */
+  line-height: 1.4;
+  /* Se establece la altura de línea de los párrafos en 1.4 (equivalente a 140%) */
+}
+
+/* Estilos para el contenedor (.container) */
+
+.container {
+  max-width: 800px;
+  /* Se establece el ancho máximo del contenedor en 800px */
+  width: 100%;
+  /* Se establece el ancho del contenedor al 100% del ancho disponible */
+  margin: 0 auto;
+  /* Se establece un margen superior e inferior de 0 y un margen izquierdo y derecho automático para centrar el contenedor horizontalmente */
+}
