@@ -1,13 +1,18 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  /* Establece el margen del cuerpo del documento a 0 */
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
+  /* Establece la fuente del texto del cuerpo del documento a una lista de fuentes en caso de que alguna no esté disponible */
   -webkit-font-smoothing: antialiased;
+  /* Aplica un suavizado antialiasing en las fuentes en navegadores webkit */
   -moz-osx-font-smoothing: grayscale;
+  /* Aplica un suavizado en escala de grises en las fuentes en sistemas operativos macOS */
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+  /* Establece la fuente del texto dentro del elemento 'code' a una lista de fuentes monoespaciadas */
 }
