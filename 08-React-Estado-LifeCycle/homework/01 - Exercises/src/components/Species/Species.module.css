@@ -1,19 +1,20 @@
 .divContent {
   display: flex;
-  flex-direction: column;
+  flex-direction: center;
+  padding-left: 20%;
   align-items: center;
   justify-content: flex-start;
   width: 100vw;
 }
 
 .divContent button {
-    font-size: 1em;
+  font-size: 1em;
   text-align: center;
-    margin-left: 2em;
-    border-radius: 0.3em;
+  margin-left: 2em;
+  border-radius: 0.3em;
 }
 
-.divContent button:hover{
-    background-color: #4f772d;
-    color: #f6f4e6;
+.divContent button:hover {
+  background-color: #cf6262;
+  color: #f6f4e6;
 }
