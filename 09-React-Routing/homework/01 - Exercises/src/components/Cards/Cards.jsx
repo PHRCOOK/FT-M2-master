@@ -1,25 +1,17 @@
 import React from "react";
-import Card from "../Card/Card";
-import styleCards from "./Cards.module.css";
+import { Link } from "react-router-dom";
+import styleCard from "./Card.module.css";
 
-export default function Cards({ cruise }) {
-  if (cruise) {
-    return (
-      <div className={styleCards.container}>
-        {cruise.map((c) => (
-          <Card
-            key={c.id}
-            name={c.name}
-            image={c.image}
-            about={c.about}
-            itinerary={c.itinerary}
-            map={c.map}
-            id={c.id}
-          />
-        ))}
+export default function Card({ name, image, id }) {
+  return (
+    // Enlace que redirige a los detalles de la tarjeta de crucero
+    <Link to={`/cruises/${id}`} className={styleCard.link}>
+      <div className={styleCard.container}>
+        {/* Nombre de la tarjeta */}
+        <h4>{name}</h4>
+        {/* Imagen de la tarjeta */}
+        <img src={image} alt="" />
       </div>
-    );
-  } else {
-    <div>No hay crucero</div>;
-  }
+    </Link>
+  );
 }
